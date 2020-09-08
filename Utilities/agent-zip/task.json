@@ -1,6 +1,6 @@
 {
   "id": "db1289b4-232a-483c-b55c-a0a6a470f385",
-  "name": "agent-zip",
+  "name": "AgentZip",
   "friendlyName": "Zip an Agent Folder",
   "description": "Zip Files and Folder on the Agent",
   "author": "kodaren",
@@ -11,10 +11,10 @@
   "version": {
     "Major": "0",
     "Minor": "2",
-    "Patch": "0"
+    "Patch": "4"
   },
   "minimumAgentVersion": "1.83.0",
-  "instanceNameFormat": "Agent-Zip",
+  "instanceNameFormat": "AgentZip",
   "groups": [
     {
       "name": "advanced",
@@ -49,7 +49,7 @@
     }
   ],
   "execution": {
-    "PowerShell": {
+    "PowerShell3": {
       "target": "$(currentDirectory)\\zip.ps1",
       "argumentFormat": "",
       "workingDirectory": "$(currentDirectory)"

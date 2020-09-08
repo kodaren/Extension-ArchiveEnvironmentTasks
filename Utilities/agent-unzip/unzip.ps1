@@ -16,7 +16,7 @@ if($overwrite -eq "true"){
 }
 
 if ($overwrite -and (Test-Path $pathToZipFolder)){
-    Write-Verbose "Removing the old file"
+    Write-Verbose "Removing the old files"
     Remove-Item $pathToZipFolder -Recurse
 }
 
@@ -24,4 +24,4 @@ if ($overwrite -and (Test-Path $pathToZipFolder)){
 # import-module "Microsoft.TeamFoundation.DistributedTask.Task.Common"
 Add-Type -A System.IO.Compression.FileSystem
 
-[IO.Compression.ZipFile]::ExtractToDirectory($pathToZipFile, $pathToZipFolder, $overwrite)
+[IO.Compression.ZipFile]::ExtractToDirectory($pathToZipFile, $pathToZipFolder)

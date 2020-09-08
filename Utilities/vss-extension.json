@@ -2,9 +2,9 @@
   "manifestVersion": 1,
   "id": "environmentarchivetasks",
   "name": "Environment Archive Tasks",
-  "version": "0.1.1",
+  "version": "0.2.4",
   "publisher": "kodaren",
-  "description": "Archive tasks for deploying to Environment target",
+  "description": "Archive tasks for deploying to Environments/Agents",
   "public": true,
   "categories": ["Azure Pipelines"],
   "tags": ["utility", "tasks", "archive", "zip", "unzip"],
@@ -15,6 +15,17 @@
   "branding": {
     "color": "#f6f7fb",
     "theme": "light"
+  },
+  "links": {
+    "getstarted": {
+      "uri": "https://github.com/kodaren/Extension-ArchiveEnvironmentTasks/blob/master/Utilites/overview.md"
+    },
+    "issues": {
+      "uri": "https://github.com/kodaren/Extension-ArchiveEnvironmentTasks/issues"
+    },
+    "repository": {
+      "uri": "https://github.com/kodaren/Extension-ArchiveEnvironmentTasks"
+    }
   },
   "content": {
     "details": {

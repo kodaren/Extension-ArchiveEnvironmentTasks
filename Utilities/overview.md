@@ -8,7 +8,7 @@ Release Management utility tasks
 
 ### Zip & Unzip
 
-This task lets you create zip files and Unzip archives on a windows agent.
+This task lets you create zip files and unzip archives on a windows agent.
 
  ```
 
