@@ -1,0 +1,60 @@
+﻿{
+  "manifestVersion": 1,
+  "id": "environmentarchivetasks",
+  "name": "Environment Archive Tasks",
+  "version": "0.1.1",
+  "publisher": "kodaren",
+  "description": "Archive tasks for deploying to Environment target",
+  "public": true,
+  "categories": ["Azure Pipelines"],
+  "tags": ["utility", "tasks", "archive", "zip", "unzip"],
+  "icons": {
+    "default": "images/Icon128.png",
+    "large": "images/Icon512.png"
+  },
+  "branding": {
+    "color": "#f6f7fb",
+    "theme": "light"
+  },
+  "content": {
+    "details": {
+      "path": "overview.md"
+    }
+  },
+  "files": [
+    {
+      "path": "agent-zip"
+    },
+    {
+      "path": "agent-unzip"
+    },
+    {
+      "path": "images",
+      "addressable": true
+    }
+  ],
+  "scopes": ["vso.build_execute", "vso.serviceendpoint_manage"],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "task-agent-zip",
+      "type": "ms.vss-distributed-task.task",
+      "targets": ["ms.vss-distributed-task.tasks"],
+      "properties": {
+        "name": "agent-zip"
+      }
+    },
+    {
+      "id": "task-agent-unzip",
+      "type": "ms.vss-distributed-task.task",
+      "targets": ["ms.vss-distributed-task.tasks"],
+      "properties": {
+        "name": "agent-unzip"
+      }
+    }
+  ]
+}
