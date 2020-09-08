@@ -11,7 +11,7 @@
   "version": {
     "Major": "0",
     "Minor": "2",
-    "Patch": "4"
+    "Patch": "6"
   },
   "minimumAgentVersion": "1.83.0",
   "instanceNameFormat": "AgentZip",
